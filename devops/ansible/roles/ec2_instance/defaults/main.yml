@@ -1,0 +1,6 @@
+---
+keypair: "mumbai"
+image_id: "ami-079b5e5b3971bd10d"
+region: "ap-south-1"
+group_id: "sg-06431a02dd400e4be"
+subnet_id: "subnet-005cb86b6936b9472"

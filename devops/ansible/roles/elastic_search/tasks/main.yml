@@ -9,19 +9,20 @@
     upgrade: dist
     force_apt_get: yes
 - name: Install common packages
-  dnf:
+  apt:
     name:
       - vim
       - wget
     state: present
 - name: Import the Elasticsearch PGP Key
-  shell: "{{ pgp_key }}"
-  args:
-    warn: no
+  apt_key:
+      url: "{{ pgp_key }}"
+      validate_certs: no
 - name: Add repository definition
   copy:
     dest: "{{ dest_path }}"
-    content:
+    content: "{{ content_path }}"
+    
 - name: Install the Elasticsearch package
   apt:
     name: elasticsearch
