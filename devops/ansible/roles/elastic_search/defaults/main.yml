@@ -1,0 +1,3 @@
+---
+pgp_key: "| wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -"
+dest_path: "/etc/apt/sources.list.d/elastic-7.x.list"
