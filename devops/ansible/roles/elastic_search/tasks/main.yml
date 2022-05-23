@@ -11,7 +11,7 @@
 - name: Install common packages
   apt:
     name:
-      - vim
+      
       - wget
     state: present
 - name: Import the Elasticsearch PGP Key
