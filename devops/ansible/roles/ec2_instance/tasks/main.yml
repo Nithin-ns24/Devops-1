@@ -1,5 +1,5 @@
 ---
-- name: AWS OS provisioning
+- name: creating ec2 instance
     ec2:
       key_name: "{{ keypair }}"
       instance_type: t2.micro
