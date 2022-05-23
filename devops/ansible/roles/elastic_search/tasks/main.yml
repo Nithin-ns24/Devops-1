@@ -11,7 +11,6 @@
 - name: Install common packages
   apt:
     name:
-      
       - wget
     state: present
 - name: Import the Elasticsearch PGP Key
