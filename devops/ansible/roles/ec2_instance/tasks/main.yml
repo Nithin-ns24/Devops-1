@@ -3,7 +3,7 @@
     ec2:
       key_name: "{{ keypair }}"
       instance_type: t2.micro
-      image: "{{ image_id }}"
+      image_id: "{{ image_id }}"
       wait: yes
       region: "{{ region }}"
       group_id: "{{ group_id }}"
